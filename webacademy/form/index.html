@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ask a question</title>
+  </head>
+  <body>
+      <h1>ASK A QUESTION</h1>
+      <p>Do you you have any questions that are unanswered? Fill the form and we will get a memeber of the team to answer it</p>
+      <form class="contact-form">
+          <label for="">Name</label><br />
+          <input class="name" type="text" placeholder="Enter your name" /><br />
+          <label for="">Email</label><br />
+          <input class="email" type="email" placeholder="Enter your email" /><br />
+          <label for="">Message</label><br />
+          <textarea class="message"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Please type your question here"></textarea><br />
+          <button type="submit">Submit</button>
+      </form>
+
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+      <script src="app.js"></script>
+  </body>
+</html>

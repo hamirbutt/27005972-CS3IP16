@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<title>website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
+</style>
+<body>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            
+            <a href="#About" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="Work zone">WORK ZONE <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#Reading list" class="w3-bar-item w3-button">READING LIST</a>
+                    <a href="#Revise" class="w3-bar-item w3-button">REVISE</a>
+                    <a href="#Quizzes" class="w3-bar-item w3-button">QUIZZES</a>
+
+                </div>
+            </div>
+
+            <a href="#CodingZone" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CODING ZONE</a>
+
+            <a href="#Ask a question" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ASK A QUESTION</a>
+
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+        <a href="#Revise" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WORK ZONE</a>
+        <a href="#CodingZone" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CODING ZONE</a>
+        <a href="#ask a question" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ASK A QUESTION</a>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- Slideshow -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="pictures\picture1.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            </div>
+        </div>
+
+        <div class="mySlides w3-display-container w3-center">
+            <img src="pictures\picture2.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            </div>
+        </div>
+
+        <div class="mySlides w3-display-container w3-center">
+            <img src="pictures\picture3.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            </div>
+        </div>
+
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+        
+        <!-- The about Section -->
+        <div class="w3-red" id="About">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">ABOUT US</h2>
+                <p class="w3-opacity w3-center"><i>For every student, every classroom. Real results.</i></p>
+                <p class="w3-justify w3-center">
+                    Here at WEB ACADEMY, we aim to provide anyone with an interest in web development, a platform to enhance and develop their knowledge to understand the way in which the web works. Students can practice at their own pace, first filling in gaps in their understanding and then accelerating their learning. The all-inclusive Coding Zone allows users to get a hand on experience like no other. Created by experts, for all types of learners. The web learning platform of tomorrow. There is no limit with WEB ACADEMY.
+                </p>
+                <div class="w3-row w3-padding-32">
+                    <img src="pictures\notes.png" class="w3-center" alt="Random Name" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- READING LIST -->
+    <div class="w3-black" id="Reading list">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-center">READING LIST</h2>
+            <p class="w3-center"><em>Here are some books that can assist you in your learning experience.<br> Click on the images to get details about the books</em></p><br>
+
+            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m3">
+                    <img src="pictures\book1.jpg" style="width:85%" onclick="onClick(this)" class="w3-hover-opacity" alt="HTML Beginner's Crash Course: HTML for Beginner's Guide to Learning HTML, HTML & CSS, & Web Design Paperback – by Quick Start Guides (Author)">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="pictures\book2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Get Coding! Learn HTML, CSS, and JavaScript and Build a Website, App, and Game – by Young Rewired State (Author), Duncan Beedie (Illustrator)">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="pictures\book3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Web Coding & Development All–in–One For Dummies (For Dummies (Computer/Tech)) – by Paul McFedries (Author)">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="pictures\book4.png" style="width:85%" onclick="onClick(this)" class="w3-hover-opacity" alt="HTML & CSS for Beginners: Learn the Fundamentals of Computer Programming (1) (Essential Coding) – by Jo Foster">
+                </div>
+            </div>
+
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- Revise -->
+    <div class="w3-red" id="Revise">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">REVISE</h2>
+            <p class="w3-opacity w3-center"><i>ALL THE FUNDAMENTALS YOU NEED TO KNOW ABOUT CODING FOR THE WEB</i></p><br>
+
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <video width="250" controls>
+                        <source src="pictures\html.mp4" type="video/mp4">
+                        <source src="pictures\html.ogg" type="video/ogg">
+                    </video>
+                    <p><b>HTML CRASH COURSE</b></p>
+                    <p class="w3-opacity">This is meant for absolute beginners. If you are interested in learning HTML but know nothing, then you are in the right place. This is the starting point for learning HTML. </p>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <video width="250" controls>
+                        <source src="pictures\css.mp4" type="video/mp4">
+                        <source src="pictures\css.ogg" type="video/ogg">
+                    </video><div class="w3-container w3-red">
+                        <p><b>CSS CRASH COURSE</b></p>
+                        <p class="w3-opacity">If you are interested in learning CSS but know nothing, then you are in the right place. We will be looking at styles, selectors, declarations and much more.</p>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <video width="250" controls>
+                        <source src="pictures\js.mp4" type="video/mp4">
+                        <source src="pictures\js.ogg" type="video/ogg">
+                    </video>
+                    <p><b>JS CRASH COURSE</b></p>
+                    <p class="w3-opacity">
+                        In this crash course we will go over the fundamentals of JavaScript including more modern syntax like classes, arrow functions and much more. This is the starting point for learning JS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- QUIZ -->
+    <div class="w3-black" id="Quizzes">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">QUIZ ZONE</h2>
+            <p class="w3-opacity w3-center"><i>PUT YOUR KNOWLEDGE TO THE TEST</i></p><br>
+
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="pictures\quiz1.png" style="width:85%">
+                    <div class="w3-container w3-black">
+                        <p><b>HTML QUIZ</b></p>
+                        <p class="w3-opacity">Put your HTML knowledge to the test in a rapidly timed test to see if your ready for the coding zone.</p>
+                        <a class="w3-button w3-white w3-margin-bottom" href="quiz1/index.html" target="_blank">QUIZ</a>
+
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="pictures\quiz2.png" style="width:85%">
+                    <div class="w3-container w3-black">
+                        <p><b>CSS QUIZ</b></p>
+                        <p class="w3-opacity">Put your CSS knowledge to the test in a rapidly timed test to see if your ready for the coding zone.</p>
+                        <a class="w3-button w3-white w3-margin-bottom" href="quiz2/index.html" target="_blank">QUIZ</a>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="pictures\quiz3.png" style="width:85%">
+                    <div class="w3-container w3-black">
+                        <p><b>JS QUIZ</b></p>
+                        <p class="w3-opacity">Put your JS knowledge to the test in a rapidly timed test to see if your ready for the coding zone.</p>
+                        <a class="w3-button w3-white w3-margin-bottom" href="quiz3/index.html" target="_blank">QUIZ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- Coding Zone -->
+    <div class="w3-white" id="CodingZone">
+        <iframe src="coding zone/index.html" name="iframe_a" scrolling="no" height="600px" width="100%" title="Iframe Example"></iframe>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- The ask a question Section -->
+    <div id="Ask a question">
+        <iframe src="form/index.html" name="iframe_a" scrolling="no" height="800px" width="100%" title="Iframe Example"></iframe>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-center w3-red w3-xlarge">
+
+        <footer> <small>&copy; Copyright 2021, Hamir Butt </small> </footer>
+    </footer>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!-- scripts -->
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
